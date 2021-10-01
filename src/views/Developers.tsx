@@ -1,11 +1,5 @@
-/* import React from 'react' */
-import { Header } from "@components";
+/* import styles from "./Header.module.scss"; */
 
 export function Developers() {
-  return (
-    <div className="developers">
-      <Header />
-      Developers
-    </div>
-  );
+  return <header>Repo222</header>;
 }

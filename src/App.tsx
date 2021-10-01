@@ -1,8 +1,10 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 
-import "normalize.css";
-
-import { Developers } from "./views/Developers";
 import { Trending } from "./views/Trending";
 
 export default function App() {
@@ -12,8 +14,8 @@ export default function App() {
         <Route exact path="/trending">
           <Trending />
         </Route>
-        <Route path="/trending/developers">
-          <Developers />
+        <Route path="*">
+          <Redirect to="/trending" />
         </Route>
       </Switch>
     </Router>

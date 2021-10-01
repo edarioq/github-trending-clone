@@ -1,11 +1,14 @@
-/* import React from 'react' */
 import { Header } from "@components";
+import { Table } from "@components";
+import styles from "./Trending.module.scss";
 
 export function Trending() {
   return (
-    <div className="trending">
+    <div className={styles.trending}>
       <Header />
-      Trending
+      <main className={styles.trending__main}>
+        <Table />
+      </main>
     </div>
   );
 }
