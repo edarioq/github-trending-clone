@@ -1,12 +1,11 @@
 .table {
-  max-width: 1012px;
+  max-width: 980px;
   margin-right: auto;
   margin-left: auto;
   &__header {
     display: flex;
     align-items: center;
     padding: 16px;
-    margin: -1px -1px 0;
     background-color: var(--color-canvas-subtle);
     border-color: var(--color-border-default);
     border-style: solid;

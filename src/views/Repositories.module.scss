@@ -1,0 +1,55 @@
+.repositories {
+  box-sizing: border-box;
+  &__box {
+    display: flex;
+    padding: 16px;
+    margin-top: -1px;
+    border: 1px solid var(--color-border-muted);
+    &__left {
+      width: 50%;
+      &__name {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.25;
+      }
+      &__description {
+        color: var(--color-fg-muted);
+      }
+      &__stats {
+        display: flex;
+        font-size: 12px;
+        color: var(--color-fg-muted);
+        &__stars {
+          margin-right: 16px;
+        }
+        &__forks {
+          margin-right: 16px;
+        }
+        &__built {
+
+        }
+      }
+      &__right {
+      }
+    }
+    &__right {
+      width: 50%;
+      &__sponsor {
+      }
+      &__star {
+      }
+      &__today {
+      }
+    }
+    &:not(:first-child) {
+
+    }
+    &:first-child {
+      border-top-color: transparent;
+    }
+    &:last-child {
+      border-bottom-right-radius: 6px;
+      border-bottom-left-radius: 6px;
+    }
+  }
+}

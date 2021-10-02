@@ -9,6 +9,7 @@ export function Trending() {
       <main className={styles.trending__main}>
         <Table />
       </main>
+
     </div>
   );
 }
